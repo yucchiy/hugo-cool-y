@@ -5,6 +5,13 @@
     margin: 0 auto;
 }
 
+@media (--viewport-small-screen) {
+    .container {
+        padding-left: var(--spacing-small);
+        padding-right: var(--spacing-small);
+    }
+}
+
 .container:before,
 .container:after {
     content: "";

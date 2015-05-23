@@ -3,7 +3,7 @@
 }
 
 .article.article-summary {
-    margin-bottom: var(--spacing-medium);
+    margin-bottom: calc(1.5 * var(--spacing-normal));
 }
 
 .article .article-meta {
@@ -32,7 +32,6 @@
 .article p {
     margin-bottom: calc(0.5 * var(--spacing-normal));
     word-break: break-word;
-    line-height: var(--article-text-line-height);
     font-size: var(--article-text-font-size);
 }
 

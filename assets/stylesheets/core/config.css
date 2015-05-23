@@ -29,6 +29,7 @@
 
     --base-heading-font-weight: 300;
 
+    --base-text-line-height: 1.5;
     --base-text-font-weight: 300;
 
     --base-link-font-color: var(--color-accent-1);
@@ -42,7 +43,7 @@
     --utility-container-max-width: 700px;
     --utility-container-padding-horizontal: 0.0625rem;
 
-    --header-cover-height-normal: 200px;
+    --header-cover-height-normal: 250px;
     --header-cover-height-small: calc(0.5 * var(--header-cover-height-normal));
 
     --footer-font-color: #ffffff;

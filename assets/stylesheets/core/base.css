@@ -52,8 +52,10 @@ h5 {
     }
 }
 
-li {
+p, li {
     word-break: break-word;
+    font-weight: var(--base-text-font-weight);
+    line-height: var(--base-text-line-height);
 }
 
 a, a:hover, a:focus, a:visited {
