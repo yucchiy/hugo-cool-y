@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+
+<article>
+  <div class="row">
+    <div class="medium12 columns">
+      <p class="title-small">TAGGED IN</p>
+      <h1 class="title-tag"># {{ .Title }}</h1>
+    </div>
+  </div>
+
+  {{ range .Data.Pages }}
+    {{ .Render "summary" }}
+  {{ end }}
+</article>
+
+{{ partial "footer.html" . }}
