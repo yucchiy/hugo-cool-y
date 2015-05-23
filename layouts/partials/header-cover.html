@@ -1,0 +1,25 @@
+<header class="header-cover">
+  <div class="container">
+    <div class="header-nav">
+      <nav class="main left">
+        <ul class="list list-inline">
+          <li><a href="/">Home</a></li>
+          {{ with .Site.Params.github }}
+          <li><a href="https://github.com/{{ .screen_name }}" target="_blank">Sources</a></li>
+          {{ end }}
+        </ul>
+      </nav>
+      <nav class="sub right">
+        <ul class="list list-inline">
+          <li><a href="/index.xml"><i class="fa fa-rss"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-title">
+      <h1 class="title-sitename">
+        <a href="{{ .Site.BaseUrl }}">{{ .Site.Title }}</a>
+      </h1>
+      <p class="title-description">{{ .Site.Params.description }}</p>
+    </div>
+  </div>
+</header>

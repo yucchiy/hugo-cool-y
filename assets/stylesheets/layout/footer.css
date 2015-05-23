@@ -1,0 +1,36 @@
+.footer {
+    background-color: var(--footer-background-color);
+    padding: var(--spacing-normal) 0 var(--spacing-small);
+    color: var(--footer-font-color);
+    font-size: calc(0.9 * var(--base-body-font-size));
+}
+
+.footer a,
+.footer a:active,
+.footer a:hover,
+.footer a:focus {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer .copyright {
+    display: block;
+    text-align: left;
+}
+
+.footer .sociallinks {
+    text-align: right;
+    margin: 0;
+    list-style: none;
+}
+
+.footer .sociallinks li {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: var(--spacing-xsmall);
+}
+
+.footer .sociallinks li a {
+    font-size: var(--footer-socialicon-size);
+}
+

@@ -1,0 +1,13 @@
+.list {
+    padding-left: 0;
+}
+
+.list.list-inline li {
+    list-style: none;
+    display: inline-block;
+    padding-right: calc(0.5 * var(--spacing-small));
+}
+
+.list.list-inline li:last-child {
+    padding-right: 0;
+}

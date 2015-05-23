@@ -1,17 +1,24 @@
-name = "Mytheme"
-license = "MIT"
-licenselink = "https://github.com/.../.../LICENSE.md"
-description = ""
-homepage = "http://siteforthistheme.com/"
-tags = ["", ""]
-features = ["", ""]
+[params]
+  description = "スーパーハカーになるべく, 日々学んだことを書きます"
 
-[author]
-  name = ""
-  homepage = ""
+[params.author]
+  name = "Yuichiro Mukai"
+  url  = "https://twitter.com/yucchiy_"
+  imageurl  = "https://s.gravatar.com/avatar/f218bd83250eeb22337db1ee6a45cccb?s=300"
+  bio = "渋谷で働くウェブエンジニア. バックエンドを中心として開発しています. PHP・Java・JavaScriptをメインに書きます.スーパーハカーになるべく日々頑張ってます."
 
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+[params.twitter]
+  screen_name = "yucchiy_"
+
+[params.github]
+  screen_name = "yucchiy"
+
+[params.facebook]
+  screen_name = "yucchiy"
+
+[permalinks]
+  post = "/:year/:month/:day/:filename/"
+
+[params.google_analytics]
+  tracking_id = "UA-36940311-7"
+

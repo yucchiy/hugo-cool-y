@@ -1,0 +1,14 @@
+#taxonomy .title .title-small {
+    margin-top: 0;
+    margin-bottom: 0.1em;
+    font-size: 0.9em;
+    color: #bababa;
+}
+
+#taxonomy .title .title-tag {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+

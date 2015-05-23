@@ -1,0 +1,26 @@
+.container {
+    box-sizing: border-box;
+    max-width: var(--utility-container-max-width);
+    padding: 0 var(--utility-container-padding-horizontal);
+    margin: 0 auto;
+}
+
+.container:before,
+.container:after {
+    content: "";
+    display: table;
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+}
+
+.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: left;
+}

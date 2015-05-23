@@ -1,9 +1,11 @@
 {{ partial "header.html" . }}
 
-<article>
-  {{ range .Data.Pages }}
+<div id="index">
+  <article>
+    {{ range .Data.Pages }}
     {{ .Render "summary" }}
-  {{ end }}
-</article>
+    {{ end }}
+  </article>
+</div>
 
 {{ partial "footer.html" . }}

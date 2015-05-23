@@ -1,0 +1,74 @@
+/* -------- */
+/* Settings */
+/* -------- */
+
+:root {
+    /* Variables */
+    /* --------- */
+
+    --color-accent-1: #f0825c;
+
+    --color-black: #000;
+    --color-gray-darker:  color(var(--color-black) lightness(13.5%));
+    --color-gray-dark:    color(var(--color-black) lightness(20%));
+    --color-gray:         color(var(--color-black) lightness(33.5%));
+    --color-gray-light:   color(var(--color-black) lightness(70%));
+    --color-gray-lighter: color(var(--color-black) lightness(93.5%));
+
+    --spacing-normal: 2rem;
+    --spacing-small:  calc(0.5 * var(--spacing-normal));
+    --spacing-xsmall: calc(0.25 * var(--spacing-normal));
+    --spacing-medium: calc(2 * var(--spacing-normal));
+    --spacing-large:  calc(4 * var(--spacing-normal));
+    --spacing-xlarge: calc(8 * var(--spacing-normal));
+
+    --color-border-color: var(--color-gray-lighter);
+    --base-body-font-color: #4f5759;
+    --base-body-font-family: 'Helvetica Neue','Helvetica','Arial',sans-serif;
+    --base-body-font-size: 100%;
+
+    --base-heading-font-weight: 300;
+
+    --base-text-font-weight: 300;
+
+    --base-link-font-color: var(--color-accent-1);
+
+    --base-h1-font-size: 2.0rem;
+    --base-h2-font-size: 1.75rem;
+    --base-h3-font-size: 1.5rem;
+    --base-h4-font-size: 1.25rem;
+    --base-h5-font-size: 1.0rem;
+
+    --utility-container-max-width: 700px;
+    --utility-container-padding-horizontal: 0.0625rem;
+
+    --header-cover-height-normal: 200px;
+    --header-cover-height-small: calc(0.5 * var(--header-cover-height-normal));
+
+    --footer-font-color: #ffffff;
+    --footer-background-color: #363e43;
+    --footer-socialicon-size: 30px;
+
+    --tag-background-color: #fafafa;
+    --tag-border-radius: 4px;
+    --tag-border-color: #f0f0f0;
+    --tag-font-color: #8e9293;
+    --tag-font-size: calc(1.0 * var(--base-body-font-size));
+
+    --article-meta-font-color: var(--color-gray-light);
+
+    --article-text-font-size: 1.1rem;
+    --article-text-line-height: 1.8;
+
+    --article-code-background: var(--color-gray-lighter);
+
+    --article-link-font-color: var(--color-accent-1);
+
+    --article-blockquote-border-color: var(--color-gray-lighter);
+    --article-blockquote-font-color: var(--color-gray);
+
+    --writerinfo-icon-size: 80px;
+    --writerinfo-icon-small-size: 60px;
+}
+
+@custom-media --viewport-small-screen (width <= 40rem);

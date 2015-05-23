@@ -1,48 +1,40 @@
 {{ partial "header.html" . }}
 
-<article class="post single">
-  <div class="row">
-    <div class="medium12 columns">
+<article class="article">
+  <time class="article-meta" pubdate datetime="{{ .Date.Format "20060102T150405" }}" title="{{ .Date.Format "20060102T150405" }}">{{ .Date.Format "02 January, 2006" }}</time>
+  <h1 class="article-title">{{ .Title }}</h1>
 
-      <section class="post-header">
-        <time class="post-metainfo" pubdate datetime="{{ .Date.Format "20060102T150405" }}" title="{{ .Date.Format "20060102T150405" }}">{{ .Date.Format "02 January, 2006" }}</time>
-        <h1 class="post-title">{{ .Title }}</h1>
-      </section>
+  <section class="post-body">
+    {{ .Content }}
+  </section>
 
-      <section class="post-body">
-        {{ .Content }}
-      </section>
+  <ul class="list list-inline">
+    {{ range .Params.tags }}
+    <li>
+      <a href="tags/{{ . | urlize }}" class="tag"># {{ . }}</a>
+    </li>
+    {{ end }}
+  </ul>
 
-      <ul class="inline-list post-tags">
-        {{ range .Params.tags }}
-        <li>
-          <a href="tags/{{ . | urlize }}"># {{ . }}</a>
-        </li>
-        {{ end }}
-      </ul>
+  <div class="pager">
+    {{ with .Prev }}
+      <a class="prev" href="{{ .Permalink  }}" rel="prev">
+        <span>« 前へ</span>
+      </a>
+    {{ end }}
 
-      {{ partial "social_buttons.html" . }}
-
-      <div class="pager row">
-        {{ with .Prev }}
-          <a class="prev medium-8 medium-offset-4 columns" href="{{ .Permalink  }}" rel="prev">
-            <span>« </span>
-            <span>{{ .Title }}</span>
-          </a>
-        {{ end }}
-
-        {{ with .Next }}
-          <a class="next medium-8 medium-offset-4 columns" href="{{ .Permalink  }}" rel="next">
-            <span>{{ .Title }}</span>
-            <span> »</span>
-          </a>
-        {{ end }}
-      </div>
-      {{ with .Site.Params.disqus }}
-        {{ partial "disqus.html" . }}
-      {{ end }}
-    </div>
+    {{ with .Next }}
+      <a class="next" href="{{ .Permalink  }}" rel="next">
+        <span>次へ »</span>
+      </a>
+    {{ end }}
   </div>
+
+  {{ partial "social_buttons.html" . }}
+
+  {{ with .Site.Params.disqus }}
+    {{ partial "disqus.html" . }}
+  {{ end }}
 </article>
 
 {{ partial "footer.html" . }}

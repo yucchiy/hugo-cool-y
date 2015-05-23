@@ -1,0 +1,19 @@
+.pager {
+    position: relative;
+    min-height: var(--spacing-normal);
+    margin-bottom: var(--spacing-small);
+}
+
+.pager .prev {
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 0;
+}
+
+.pager .next {
+    position: absolute;
+    text-align: right;
+    top: 0;
+    right: 0;
+}

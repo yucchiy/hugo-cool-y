@@ -1,0 +1,17 @@
+.tag {
+    display: inline-block;
+    background-color: var(--tag-background-color);
+    border-radius: var(--tag-border-radius);
+    border: 1px solid var(--tag-border-color);
+    text-decoration: none;
+    padding: 0.3rem 0.5rem;
+    color: var(--tag-font-color);
+}
+
+a.tag,
+a.tag:active,
+a.tag:focus,
+a.tag:hover {
+    color: var(--tag-font-color) !important;
+    text-decoration: none !important;
+}

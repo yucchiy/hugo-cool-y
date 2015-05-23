@@ -1,0 +1,34 @@
+.writerinfo {
+    margin: var(--spacing-normal) 0;
+}
+
+.writerinfo .info-icon {
+    float: left;
+    margin-right: var(--spacing-small);
+}
+
+.writerinfo .info-icon img {
+    width: var(--writerinfo-icon-size);
+    border-radius: calc(0.5 * var(--writerinfo-icon-size));
+}
+
+.writerinfo .info-body {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.writerinfo .info-body .name {
+    margin-top: 0;
+    margin-bottom: var(--spacing-xsmall);
+}
+
+.writerinfo .info-body .profile {
+    color: var(--color-gray-light);
+}
+
+@media (--viewport-small-screen) {
+    .writerinfo .info-icon img {
+        width: var(--writerinfo-icon-small-size);
+        border-radius: calc(0.5 * var(--writerinfo-icon-small-size));
+    }
+}

@@ -1,37 +1,50 @@
 
+    </div>
+
     {{ with .Site.Params.author }}
-    <div class="writerinfo">
-      <div class="row">
-        <div class="info-icon">
-          <a href="{{ .url }}"><img src="{{ .imageurl }}"></a>
-        </div>
-        <div class="info-body">
-          <p class="name" rel="author">{{ .name }}</p>
-          <p class="profile">{{ .bio }}</p>
+    <div class="container">
+      <div class="writerinfo">
+        <div class="row">
+          <div class="info-icon">
+            <a href="{{ .url }}"><img src="{{ .imageurl }}"></a>
+          </div>
+          <div class="info-body">
+            <p class="name" rel="author">{{ .name }}</p>
+            <p class="profile">{{ .bio }}</p>
+          </div>
         </div>
       </div>
     </div>
     {{ end }}
 
-    <footer>
-      <div class="row">
-        <small class="copyright medium-8 columns">{{ .Site.Copyright }}</small>
-        <ul class="sociallinks medium-4 columns">
+    <footer class="footer">
+      <div class="container">
+        <small class="copyright">{{ .Site.Copyright }}</small>
+        <p class="poweredby">Powered by
+          <a href="https://github.com/yucchiy/hugo-cool-y">cool-y</a>
+        </p>
+        <ul class="sociallinks">
+          {{ with .Site.Params.twitter }}
           <li>
-            <a href="https://twitter.com/yucchiy_" target="_blank">
+            <a href="https://twitter.com/{{ .screen_name }}" target="_blank">
               <i class="fa fa-twitter-square"></i>
             </a>
           </li>
+          {{ end }}
+          {{ with .Site.Params.github }}
           <li>
-            <a href="https://github.com/yucchiy" target="_blank">
+            <a href="https://github.com/{{ .screen_name }}" target="_blank">
               <i class="fa fa-github-square"></i>
             </a>
           </li>
+          {{ end }}
+          {{ with .Site.Params.facebook }}
           <li>
-            <a href="https://www.facebook.com/yucchiy" target="_blank">
+            <a href="https://www.facebook.com/{{ .screen_name }}" target="_blank">
               <i class="fa fa-facebook-square"></i>
             </a>
           </li>
+          {{ end }}
         </ul>
       </div>
     </footer>
@@ -39,10 +52,6 @@
     {{ with .Site.Params.google_analytics }}
       {{ partial "google-analytics.html" . }}
     {{ end }}
-
-    <script src="/js/vendor/jquery.js"></script>
-    <script src="/js/vendor/fastclick.js"></script>
-    <script src="/js/foundation.min.js"></script>
 
     <div id="fb-root"></div>
       <script>(function(d, s, id) {

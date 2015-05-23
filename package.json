@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/yucchiy/hugo-cool-y",
   "devDependencies": {
-    "postcss": "^4.1.11"
+    "cssnext": "^1.4.0",
+    "gulp": "^3.8.11",
+    "gulp-postcss": "^5.1.6",
+    "postcss": "^4.1.11",
+    "postcss-import": "^5.2.2",
+    "postcss-simple-vars": "^0.3.0"
   }
 }
