@@ -58,6 +58,10 @@ p, li {
     line-height: var(--base-text-line-height);
 }
 
+strong {
+    font-weight: var(--base-text-bold-font-weight);
+}
+
 a, a:hover, a:focus, a:visited {
     word-break: break-word;
     color: var(--base-link-font-color);

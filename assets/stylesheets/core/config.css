@@ -31,6 +31,7 @@
 
     --base-text-line-height: 1.5;
     --base-text-font-weight: 300;
+    --base-text-bold-font-weight: 600;
 
     --base-link-font-color: var(--color-accent-1);
 

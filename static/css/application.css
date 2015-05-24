@@ -500,6 +500,10 @@ p, li {
     line-height: 1.5;
 }
 
+strong {
+    font-weight: 600;
+}
+
 a, a:hover, a:focus, a:visited {
     word-break: break-word;
     color: #f0825c;
