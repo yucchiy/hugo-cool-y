@@ -36,7 +36,6 @@
 }
 
 .article a {
-    display: inline-block;
     margin: 0 0.1rem;
     color: var(--article-link-font-color);
 }
