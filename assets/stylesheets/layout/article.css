@@ -41,7 +41,7 @@
 }
 
 .article ul li {
-    line-height: 1.5;
+    line-height: var(--article-text-line-height);
 }
 
 .article a:active,

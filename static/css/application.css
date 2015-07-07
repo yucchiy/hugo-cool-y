@@ -497,7 +497,7 @@ h5 {
 p, li {
     word-break: break-word;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 strong {
@@ -668,7 +668,7 @@ a, a:hover, a:focus, a:visited {
 }
 
 .article ul li {
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 .article a:active,
