@@ -840,6 +840,9 @@ a.tag:hover {
     }
 }
 
+.list.list-inline li {
+  vertical-align: text-top;
+}
 #index article h2:first-child {
     margin-top: 0;
 }
