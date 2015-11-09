@@ -19,5 +19,6 @@
 @import './ui/pager.css';
 @import './ui/writerinfo.css';
 
+@import './page/global.css';
 @import './page/index.css';
 @import './page/taxonomy.css';
