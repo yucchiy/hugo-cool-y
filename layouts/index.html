@@ -1,11 +1,12 @@
 {{ partial "header.html" . }}
 
-<div id="index">
+<div id="page-index">
   <article>
-    {{ range .Data.Pages }}
+    {{ range $index, $page := .Paginator.Pages }}
     {{ .Render "summary" }}
     {{ end }}
   </article>
 </div>
 
-{{ partial "footer.html" . }}
+{{ partial "pagination.html" .Paginator }}
+{{ partial "footer.html" }}

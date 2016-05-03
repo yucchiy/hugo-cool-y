@@ -1,0 +1,14 @@
+<div class="pager">
+  {{ if .HasPrev }}
+  <a class="prev" href="{{ .Prev.URL }}" rel="prev">
+    <span>« 新しい記事へ</span>
+  </a>
+  {{ end }}
+
+  {{ if .HasNext }}
+  <a class="next" href="{{ .Next.URL }}" rel="next">
+    <span>古い記事へ »</span>
+  </a>
+  {{ end }}
+</div>
+
