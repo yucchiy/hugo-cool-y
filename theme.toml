@@ -5,7 +5,7 @@
   name = "Yuichiro Mukai"
   url  = "https://twitter.com/yucchiy_"
   imageurl  = "https://s.gravatar.com/avatar/f218bd83250eeb22337db1ee6a45cccb?s=300"
-  bio = "渋谷で働くウェブエンジニア. バックエンドを中心として開発しています. PHP・Java・JavaScriptをメインに書きます.スーパーハカーになるべく日々頑張ってます."
+  bio = "渋谷で働くプログラマ. 最近はUnityでゲーム開発しています. Java・Ruby・C#をメインに, 趣味でRustとSwiftを書きます スーパーハカーになるべく日々頑張ってます."
 
 [params.twitter]
   screen_name = "yucchiy_"

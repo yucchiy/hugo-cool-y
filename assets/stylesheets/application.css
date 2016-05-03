@@ -9,16 +9,15 @@
 @import './core/utility.css';
 @import './core/list.css';
 
-/* import layout stylesheets */
-@import './layout/header-cover.css';
-@import './layout/article.css';
-@import './layout/footer.css';
+/* import module stylesheets */
+@import './module/header-cover.css';
+@import './module/article.css';
+@import './module/footer.css';
+@import './module/tag.css';
+@import './module/pager.css';
+@import './module/writerinfo.css';
 
-/* import ui stylesheets */
-@import './ui/tag.css';
-@import './ui/pager.css';
-@import './ui/writerinfo.css';
-
+/* import page specific stylesheets */
 @import './page/global.css';
-@import './page/index.css';
+@import './page/list.css';
 @import './page/taxonomy.css';

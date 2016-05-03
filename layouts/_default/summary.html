@@ -3,5 +3,7 @@
   <time class="article-meta" pubdate datetime="{{ .Date.Format "20060102T150405" }}" title="{{ .Date.Format "20060102T150405" }}">{{ .Date.Format "02 January, 2006" }}</time>
   <p class="article-description">{{ .Description }}</p>
 
-  <a href="{{ .RelPermalink }}" rel="prefetch">続きをよむ</a>
+  <a class="continue-reading" href="{{ .RelPermalink }}" rel="prefetch">続きをよむ</a>
+
+  <hr class="devider">
 </article>

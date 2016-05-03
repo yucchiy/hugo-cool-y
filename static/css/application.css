@@ -427,18 +427,28 @@ th {
 }
 
 /* import core stylesheets */
-/* -------- */
-/* Settings */
-/* -------- */
+/* ------------- */
+/* Configuration */
+/* ------------- */
 
 :root {
-    /* Variables */
-    /* --------- */
+    /* ------------------- */
+    /* Basic Configuration */
+    /* ------------------- */
+
+    /* ------- */
+    /* Modules */
+    /* ------- */
+
+    /* ------------- */
+    /* Page Specific */
+    /* ------------- */
 }
 html, body {
-    color: #4f5759;
+    color: #3A3B3C;
     font-family: 'Helvetica Neue','Helvetica','Arial',sans-serif;
-    font-size: 100%;
+    font-size: 18px;
+    font-size: 1.125rem;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -497,7 +507,7 @@ h5 {
 p, li {
     word-break: break-word;
     font-weight: 300;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
 strong {
@@ -558,24 +568,27 @@ a, a:hover, a:focus, a:visited {
     padding-right: 0;
 }
 
-/* import layout stylesheets */
+/* import module stylesheets */
 .header-cover {
-    height: 250px;
+    height: 300px;
     background-size: cover;
     background: url('/images/cover.jpg') transparent 50% 50% no-repeat;
+    width: 100%;
     margin-bottom: 32px;
     margin-bottom: 2rem;
-} 
+    font-size: 16px;
+    font-size: 1rem;
+}
 
 @media (max-width: 40rem) {
     .header-cover. .header-title {
-        height: 125px;
+        height: 150px;
     }
 }
 
 .header-cover .header-nav {
     position: relative;
-    height: 82.5px;
+    height: 99px;
 }
 
 .header-cover .header-nav ul {
@@ -618,27 +631,36 @@ a, a:hover, a:focus, a:visited {
     font-size: 2.5rem;
 }
 .article {
-    margin-bottom: 32px;
-    margin-bottom: 2rem;
+    margin-bottom: 64px;
+    margin-bottom: 4rem;
+    font-size: 16px;
+    font-size: 1.0rem;
+    font-weight: 300;
 }
 
 .article.article-summary {
-    margin-bottom: 48px;
-    margin-bottom: 3rem;
+    margin-bottom: 64px;
+    margin-bottom: 4rem;
 }
 
 .article .article-meta {
-    color: rgb(179, 179, 179);
+    font-size: 14px;
+    font-size: 0.9rem;
+    color: #7A7B7C;
+    font-weight: 200;
 }
 
 .article .article-title {
-    font-weight: 600;
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: none;
+    margin-bottom: 0;
 }
 
-.article.article-summary .article-title {
-    border: none;
-    font-size: 22px;
-    font-size: 1.4rem;
+.article .article-description {
+    margin-top: 32px;
+    margin-top: 2rem;
 }
 
 .article h2 {
@@ -657,8 +679,7 @@ a, a:hover, a:focus, a:visited {
     margin-bottom: 16px;
     margin-bottom: 1rem;
     word-break: break-word;
-    font-size: 17px;
-    font-size: 1.1rem;
+    font-size: inherit;
 }
 
 .article a {
@@ -724,12 +745,27 @@ a, a:hover, a:focus, a:visited {
     border-left: 5px solid rgb(240, 240, 240);
     color: rgb(87, 87, 87);
 }
+
+.article .continue-reading {
+    font-size: 14px;
+    font-size: 0.9rem;
+}
+
+.article .devider {
+    margin-top: 50px;
+    margin-top: 3.125rem;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, 0));
+}
 .footer {
     background-color: #363e43;
     padding: 32px 0 16px;
     padding: 2rem 0 1rem;
     color: #ffffff;
-    font-size: 90%;
+    font-size: 16px;
+    font-size: 1.0125rem;
 }
 
 .footer a,
@@ -761,8 +797,6 @@ a, a:hover, a:focus, a:visited {
 .footer .sociallinks li a {
     font-size: 30px;
 }
-
-/* import ui stylesheets */
 .tag {
     display: inline-block;
     background-color: #fafafa;
@@ -830,7 +864,9 @@ a.tag:hover {
 }
 
 .writerinfo .info-body .profile {
-    color: rgb(179, 179, 179);
+    color: #676767;
+    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 @media (max-width: 40rem) {
@@ -840,10 +876,11 @@ a.tag:hover {
     }
 }
 
+/* import page specific stylesheets */
 .list.list-inline li {
   vertical-align: text-top;
 }
-#index article h2:first-child {
+#page-list article h2:first-child {
     margin-top: 0;
 }
 #taxonomy .title .title-small {

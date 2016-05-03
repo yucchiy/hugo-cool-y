@@ -1,11 +1,11 @@
-/* -------- */
-/* Settings */
-/* -------- */
+/* ------------- */
+/* Configuration */
+/* ------------- */
 
 :root {
-    /* Variables */
-    /* --------- */
-
+    /* ------------------- */
+    /* Basic Configuration */
+    /* ------------------- */
     --color-accent-1: #f0825c;
 
     --color-black: #000;
@@ -23,13 +23,15 @@
     --spacing-xlarge: calc(8 * var(--spacing-normal));
 
     --color-border-color: var(--color-gray-lighter);
-    --base-body-font-color: #4f5759;
+    --base-body-font-color: #3A3B3C;
     --base-body-font-family: 'Helvetica Neue','Helvetica','Arial',sans-serif;
-    --base-body-font-size: 100%;
+    --base-body-font-size: 1.125rem;
+    --base-body-font-weight: 300;
 
     --base-heading-font-weight: 300;
+    --base-heading-font-size: 2.5rem;
 
-    --base-text-line-height: 1.8;
+    --base-text-line-height: 1.5;
     --base-text-font-weight: 300;
     --base-text-bold-font-weight: 600;
 
@@ -44,7 +46,11 @@
     --utility-container-max-width: 700px;
     --utility-container-padding-horizontal: 0.0625rem;
 
-    --header-cover-height-normal: 250px;
+    /* ------- */
+    /* Modules */
+    /* ------- */
+
+    --header-cover-height-normal: 300px;
     --header-cover-height-small: calc(0.5 * var(--header-cover-height-normal));
 
     --footer-font-color: #ffffff;
@@ -57,20 +63,36 @@
     --tag-font-color: #8e9293;
     --tag-font-size: calc(1.0 * var(--base-body-font-size));
 
-    --article-meta-font-color: var(--color-gray-light);
+    --article-meta-font-size:   0.9rem;
+    --article-meta-font-weight: 200;
+    --article-meta-font-color:  #7A7B7C;
 
-    --article-text-font-size: 1.1rem;
+    --article-heading-font-size: 1.5rem;
+    --article-heading-font-weight: 400;
+
+    --article-font-size: 1.0rem;
+    --article-font-weight: 300;
     --article-text-line-height: 1.8;
 
-    --article-code-background: var(--color-gray-lighter);
+    --article-heading-h3-font-weight: 400;
 
+    --article-code-background: var(--color-gray-lighter);
     --article-link-font-color: var(--color-accent-1);
 
     --article-blockquote-border-color: var(--color-gray-lighter);
     --article-blockquote-font-color: var(--color-gray);
 
+    --article-continue-reading-font-size: 0.9rem;
+
     --writerinfo-icon-size: 80px;
     --writerinfo-icon-small-size: 60px;
+
+    --writerinfo-profile-font-size: 0.9rem;
+    --writerinfo-profile-font-color: #676767;
+
+    /* ------------- */
+    /* Page Specific */
+    /* ------------- */
 }
 
 @custom-media --viewport-small-screen (width <= 40rem);

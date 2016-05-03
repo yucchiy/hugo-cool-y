@@ -23,7 +23,8 @@
 }
 
 .writerinfo .info-body .profile {
-    color: var(--color-gray-light);
+    color: var(--writerinfo-profile-font-color);
+    font-size: var(--writerinfo-profile-font-size);
 }
 
 @media (--viewport-small-screen) {

@@ -2,8 +2,10 @@
     height: var(--header-cover-height-normal);
     background-size: cover;
     background: url('/images/cover.jpg') transparent 50% 50% no-repeat;
+    width: 100%;
     margin-bottom: var(--spacing-normal);
-} 
+    font-size: 1rem;
+}
 
 @media (--viewport-small-screen) {
     .header-cover. .header-title {
