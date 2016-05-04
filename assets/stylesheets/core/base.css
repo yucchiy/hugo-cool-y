@@ -68,3 +68,21 @@ a, a:hover, a:focus, a:visited {
     text-decoration: none;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th {
+    padding: 5px;
+    border: 1px solid transparent;
+    height: 30px;
+}
+
+th {
+    background: #DFDFDF
+}
+
+
