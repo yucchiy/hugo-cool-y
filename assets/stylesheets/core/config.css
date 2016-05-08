@@ -50,7 +50,7 @@
     /* Modules */
     /* ------- */
 
-    --header-cover-height-normal: 300px;
+    --header-cover-height-normal: 200px;
     --header-cover-height-small: calc(0.5 * var(--header-cover-height-normal));
 
     --footer-font-color: #ffffff;
