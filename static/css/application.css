@@ -776,6 +776,10 @@ th {
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, 0));
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, 0));
 }
+
+.post-body img {
+    width: 100%;
+}
 .footer {
     background-color: #363e43;
     padding: 32px 0 16px;
