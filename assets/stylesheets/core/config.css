@@ -23,7 +23,7 @@
     --spacing-xlarge: calc(8 * var(--spacing-normal));
 
     --color-border-color: var(--color-gray-lighter);
-    --base-body-font-color: #3A3B3C;
+    --base-body-font-color: #52636b;
     --base-body-font-family: 'Helvetica Neue','Helvetica','Arial',sans-serif;
     --base-body-font-size: 1.125rem;
     --base-body-font-weight: 300;
@@ -50,17 +50,18 @@
     /* Modules */
     /* ------- */
 
-    --header-cover-height-normal: 200px;
+    --header-cover-height-normal: 80px;
     --header-cover-height-small: calc(0.5 * var(--header-cover-height-normal));
+    --header-cover-font-color: #a8adb0;
+    --header-cover-font-color-hover: #4c4c4c;
 
     --footer-font-color: #ffffff;
     --footer-background-color: #363e43;
     --footer-socialicon-size: 30px;
 
-    --tag-background-color: #fafafa;
+    --tag-background-color: #f3f3f3;
     --tag-border-radius: 4px;
-    --tag-border-color: #f0f0f0;
-    --tag-font-color: #8e9293;
+    --tag-font-color: #616161;
     --tag-font-size: calc(1.0 * var(--base-body-font-size));
 
     --article-meta-font-size:   0.9rem;
@@ -72,7 +73,7 @@
 
     --article-font-size: 1.0rem;
     --article-font-weight: 300;
-    --article-text-line-height: 1.8;
+    --article-text-line-height: 2.0;
 
     --article-heading-h3-font-weight: 400;
 

@@ -1,7 +1,5 @@
 .header-cover {
     height: var(--header-cover-height-normal);
-    background-size: cover;
-    background: url('/images/cover.jpg') transparent 50% 50% no-repeat;
     width: 100%;
     margin-bottom: var(--spacing-normal);
     font-size: 1rem;
@@ -26,10 +24,12 @@
     padding-right: var(--spacing-normal);
 }
 
-.header-cover .header-nav ul li a {
-    color: #ffffff;
-    opacity: 0.7;
-    font-weight: 600;
+.header-cover .header-nav ul li a,
+.header-cover .header-nav ul li a.site-name h1 {
+    color: var(--header-cover-font-color);
+    opacity: 0.9;
+    font-weight: 500;
+    font-size: 1.1rem;
     transition: opacity 0.3s;
 }
 
@@ -41,18 +41,16 @@
 
 .header-cover .header-title {
     text-align: center;
-    color: #ffffff;
+    color: var(--header-cover-font-color);
 }
 
 .header-cover .header-title a,
 .header-cover .header-title a:hover,
 .header-cover .header-title a:focus {
-    color: #ffffff;
+    color: var(--header-cover-font-color-hover);
 }
 
 .header-cover .header-title .title-sitename {
     font-weight: 500;
     font-size: calc(1.25 * var(--base-h1-font-size));
 }
-
-

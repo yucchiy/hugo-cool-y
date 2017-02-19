@@ -445,7 +445,7 @@ th {
     /* ------------- */
 }
 html, body {
-    color: #3A3B3C;
+    color: #52636b;
     font-family: 'Helvetica Neue','Helvetica','Arial',sans-serif;
     font-size: 18px;
     font-size: 1.125rem;
@@ -587,9 +587,7 @@ th {
 
 /* import module stylesheets */
 .header-cover {
-    height: 200px;
-    background-size: cover;
-    background: url('/images/cover.jpg') transparent 50% 50% no-repeat;
+    height: 80px;
     width: 100%;
     margin-bottom: 32px;
     margin-bottom: 2rem;
@@ -599,13 +597,13 @@ th {
 
 @media (max-width: 40rem) {
     .header-cover. .header-title {
-        height: 100px;
+        height: 40px;
     }
 }
 
 .header-cover .header-nav {
     position: relative;
-    height: 66px;
+    height: 26.4px;
 }
 
 .header-cover .header-nav ul {
@@ -617,10 +615,13 @@ th {
     padding-right: 2rem;
 }
 
-.header-cover .header-nav ul li a {
-    color: #ffffff;
-    opacity: 0.7;
-    font-weight: 600;
+.header-cover .header-nav ul li a,
+.header-cover .header-nav ul li a.site-name h1 {
+    color: #a8adb0;
+    opacity: 0.9;
+    font-weight: 500;
+    font-size: 17px;
+    font-size: 1.1rem;
     -webkit-transition: opacity 0.3s;
             transition: opacity 0.3s;
 }
@@ -633,13 +634,13 @@ th {
 
 .header-cover .header-title {
     text-align: center;
-    color: #ffffff;
+    color: #a8adb0;
 }
 
 .header-cover .header-title a,
 .header-cover .header-title a:hover,
 .header-cover .header-title a:focus {
-    color: #ffffff;
+    color: #4c4c4c;
 }
 
 .header-cover .header-title .title-sitename {
@@ -706,7 +707,7 @@ th {
 }
 
 .article ul li {
-    line-height: 1.8;
+    line-height: 2.0;
 }
 
 .article a:active,
@@ -820,20 +821,21 @@ th {
 }
 .tag {
     display: inline-block;
-    background-color: #fafafa;
+    background-color: #f3f3f3;
     border-radius: 4px;
-    border: 1px solid #f0f0f0;
     text-decoration: none;
-    padding: 4px 8px;
-    padding: 0.3rem 0.5rem;
-    color: #8e9293;
+    padding: 1px 4px;
+    padding: 0.1rem 0.3rem;
+    font-size: 14px;
+    font-size: 0.9rem;
+    color: #616161;
 }
 
 a.tag,
 a.tag:active,
 a.tag:focus,
 a.tag:hover {
-    color: #8e9293 !important;
+    color: #616161 !important;
     text-decoration: none !important;
 }
 .pager {

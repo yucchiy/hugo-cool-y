@@ -3,23 +3,22 @@
     <div class="header-nav">
       <nav class="main left">
         <ul class="list list-inline">
-          <li><a href="/">Home</a></li>
-          {{ with .Site.Params.github }}
-          <li><a href="https://github.com/{{ .screen_name }}" target="_blank">Sources</a></li>
-          {{ end }}
+          <li>
+            <a class="site-name" href="{{ .Site.BaseURL }}">
+              <h1>{{ .Site.Title }}</h1>
+            </a>
+          </li>
         </ul>
       </nav>
       <nav class="sub right">
         <ul class="list list-inline">
+          {{ with .Site.Params.github }}
+          <li><a href="https://github.com/{{ .screen_name }}" target="_blank">Sources</a></li>
+          {{ end }}
+
           <li><a href="/index.xml"><i class="fa fa-rss"></i></a></li>
         </ul>
       </nav>
-    </div>
-    <div class="header-title">
-      <h1 class="title-sitename">
-        <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-      </h1>
-      <p class="title-description">{{ .Site.Params.description }}</p>
     </div>
   </div>
 </header>

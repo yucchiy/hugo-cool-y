@@ -2,9 +2,9 @@
     display: inline-block;
     background-color: var(--tag-background-color);
     border-radius: var(--tag-border-radius);
-    border: 1px solid var(--tag-border-color);
     text-decoration: none;
-    padding: 0.3rem 0.5rem;
+    padding: 0.1rem 0.3rem;
+    font-size: 0.9rem;
     color: var(--tag-font-color);
 }
 
