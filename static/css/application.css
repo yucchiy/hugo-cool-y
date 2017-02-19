@@ -618,10 +618,10 @@ th {
 .header-cover .header-nav ul li a,
 .header-cover .header-nav ul li a.site-name h1 {
     color: #a8adb0;
-    opacity: 0.9;
+    opacity: 0.95;
     font-weight: 500;
-    font-size: 17px;
-    font-size: 1.1rem;
+    font-size: 14px;
+    font-size: 0.9rem;
     -webkit-transition: opacity 0.3s;
             transition: opacity 0.3s;
 }

@@ -27,9 +27,9 @@
 .header-cover .header-nav ul li a,
 .header-cover .header-nav ul li a.site-name h1 {
     color: var(--header-cover-font-color);
-    opacity: 0.9;
+    opacity: 0.95;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     transition: opacity 0.3s;
 }
 
